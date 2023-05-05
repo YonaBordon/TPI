@@ -40,6 +40,16 @@ img {
 	margin: 0 auto;
 }
 
+@media (max-width: 576px) {
+	body {
+		width: 100vh;
+	}
+	.container {
+		width: 100%;
+		margin: 0 0;
+	}
+}
+
 header {
 	background-color: rgb(53, 58, 64);
 }
@@ -73,8 +83,28 @@ header {
 	color: green;
 }
 
+@media (max-width: 576px) {
+	.header {
+		display: flex;
+		flex-direction: column;
+	}
+	.header .logo {
+		display: flex;
+		align-items: center;
+	}
+	.header .navigation {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 10px;
+		border-top: 1px solid white;
+		padding-top: 10px;
+	}
+}
+
 .portada {
-	background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('./../assets/ba1.jpg');
+	background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+		url('./../assets/ba1.jpg');
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: cover;
@@ -88,6 +118,7 @@ header {
 	align-items: flex-end;
 	height: 100%;
 }
+
 .portada-text h2,
 .portada-text p {
 	margin: 10px 0;
@@ -103,10 +134,27 @@ header {
 .tag {
 	border-radius: 5px;
 	padding: 0 5px;
-	font-weight: bold
+	font-weight: bold;
 }
 
 
-footer{
+@media (max-width: 576px) {
+	.img-honolulu{
+		font-size: 12px;
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: cover;
+		height: 100%;
+	}
+}
+
+footer {
 	background-color: #1e4f6d;
+}
+
+
+@media (max-width: 576px) {
+	footer{
+		font-size: 12px;
+	}
 }
