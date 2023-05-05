@@ -1,0 +1,112 @@
+html {
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #000000;
+}
+
+h1 {
+	font-size: 38px;
+}
+h2 {
+	font-size: 34px;
+}
+h3 {
+	font-size: 30px;
+}
+h4 {
+	font-size: 26px;
+}
+
+img {
+	max-width: 100%;
+}
+
+.container {
+	max-width: 1200px;
+	width: 95%;
+	margin: 0 auto;
+}
+
+header {
+	background-color: rgb(53, 58, 64);
+}
+
+.header {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.header img {
+	width: 100px;
+}
+
+.header .logo {
+	display: flex;
+	align-items: center;
+}
+
+.header .logo span {
+	color: white;
+}
+
+.header .navigation a {
+	margin-right: 10px;
+	text-decoration: none;
+	color: white;
+}
+.header .navigation a:last-child {
+	color: green;
+}
+
+.portada {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/assets/ba1.jpg');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	height: 600px;
+}
+
+.portada-text {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-end;
+	height: 100%;
+}
+.portada-text h2,
+.portada-text p {
+	margin: 10px 0;
+	color: white;
+	width: 60%;
+	text-align: right;
+}
+
+.portada p {
+	font-size: 20px;
+}
+
+.tag {
+	border-radius: 5px;
+	padding: 0 5px;
+	font-weight: bold
+}
+
+
+footer{
+	background-color: #1e4f6d;
+}
