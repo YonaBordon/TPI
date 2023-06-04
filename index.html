@@ -16,10 +16,12 @@
 	<body>
 		<header>
 			<div class="header container navbar navbar-expand-lg flex justify-content-md-between">
-				<div class="logo navbar-brand">
-					<img src="./assets/codoacodo.png" alt="" />
-					<span>Conf Bs As</span>
-				</div>
+				<a href="./index.html" class="text-decoration-none">
+					<div class="logo navbar-brand">
+						<img src="./assets/codoacodo.png" alt="" />
+						<span>Conf Bs As</span>
+					</div>
+				</a>
 				<button
 					class="navbar-toggler"
 					type="button"
@@ -37,17 +39,17 @@
 				>
 					<div class="navigation collapse navbar-collapse" id="navbarSupportedContent">
 						<div class="navbar-nav align-items-center align-items-md-end">
-							<a class="nav-item nav-link" href="#">Conferencia </a>
-							<a class="nav-item nav-link" href="#">Oradores</a>
-							<a class="nav-item nav-link" href="#">Lugar y Fecha</a>
-							<a class="nav-item nav-link" href="#">Conviertete en orador</a>
-							<a class="nav-item nav-link" href="#">Comprar tickets</a>
+							<a class="nav-item nav-link" href="#portada">Conferencia </a>
+							<a class="nav-item nav-link" href="#oradores">Oradores</a>
+							<a class="nav-item nav-link" href="#lugar">Lugar y Fecha</a>
+							<a class="nav-item nav-link" href="#seOrador">Conviertete en orador</a>
+							<a class="nav-item nav-link" href="./tickets.html">Comprar tickets</a>
 						</div>
 					</div>
 				</div>
 			</div>
 		</header>
-		<section class="portada mb-5">
+		<section id="portada" class="portada mb-5">
 			<div class="container portada-text align-items-center align-items-md-end">
 				<h2 class="text-center text-md-end">Conf Bs As</h2>
 				<p class="text-center text-md-end">
@@ -62,7 +64,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="container my-5">
+		<section id="oradores" class="container my-5">
 			<div class="text-center mt5">
 				<h6>CONOCE A LOS</h6>
 				<h2>HORADORES</h2>
@@ -114,7 +116,7 @@
 				</article>
 			</div>
 		</section>
-		<section class="my-5">
+		<section id="lugar" class="my-5">
 			<div class="w-100 d-flex flex-column flex-md-row mx-0">
 				<div class="">
 					<img class="img-honolulu" src="./assets/honolulu.jpg" alt="" />
@@ -133,7 +135,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="container w-75 my-5">
+		<section id="seOrador" class="container w-75 my-5">
 			<div class="text-center">
 				<h4>Conviertete en un</h4>
 				<h2>ORADOR</h2>
