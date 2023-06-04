@@ -74,30 +74,28 @@
 		<section class="container w-75">
 			<p class="text-center">VENTA</p>
 			<h2 class="text-center"><b>VALOR DE TICKET $200</b></h2>
-			<form action="">
-				<form action="#" id="ticketForm">
-					<div class="d-flex gap-2 my-4 w-100">
-						<input type="text" class="form-control" placeholder="Nombre" />
-						<input type="email" class="form-control" placeholder="Apellido" />
-					</div>
-					<input type="text" class="form-control" placeholder="Correo" />
-					<div class="d-flex gap-2 my-4 w-100">
-						<input type="text" class="form-control" placeholder="Cantidad" />
-						<select name="categoria" class="form-control w-100">
-							<option value="0" selected disabled>Seleccione una categoria</option>
-							<option value="1">Estudiante</option>
-							<option value="2">Trainee</option>
-							<option value="3">Junior</option>
-						</select>
-					</div>
-					<div class="alert alert-info" role="alert">
-						<p class="m-0" style="color: #6a6fb5">Total a pagar: <span>$</span></p>
-					</div>
-					<div class="d-flex gap-2 my-4 w-100">
-						<button type="submit" class="btn text-white w-100 btn-green">Borrar</button>
-						<button type="reset" class="btn text-white w-100 btn-green">Resumen</button>
-					</div>
-				</form>
+			<form action="#" id="ticketForm">
+				<div class="d-flex gap-2 my-4 w-100">
+					<input type="text" id="name" class="form-control" placeholder="Nombre" />
+					<input type="text" id="lastName" class="form-control" placeholder="Apellido" />
+				</div>
+				<input type="email" id="email" class="form-control" placeholder="Correo" />
+				<div class="d-flex gap-2 my-4 w-100">
+					<input type="number" min="0" id="amount" class="form-control" placeholder="Cantidad" />
+					<select name="categoria" id="category" class="form-control w-100">
+						<option value="0" selected disabled>Seleccione una categoria</option>
+						<option value="1">Estudiante</option>
+						<option value="2">Trainee</option>
+						<option value="3">Junior</option>
+					</select>
+				</div>
+				<div class="alert alert-info" role="alert">
+					<p class="m-0" style="color: #6a6fb5">Total a pagar: <span id="price">$</span></p>
+				</div>
+				<div class="d-flex gap-2 my-4 w-100">
+					<button type="reset" class="btn text-white w-100 btn-green">Borrar</button>
+					<button type="submit" class="btn text-white w-100 btn-green">Resumen</button>
+				</div>
 			</form>
 		</section>
 		<footer class="text-white text-center text-lg-start w-100">
@@ -137,4 +135,5 @@
 		integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
 		crossorigin="anonymous"
 	></script>
+	<script src="./js/tickets.js"></script>
 </html>
